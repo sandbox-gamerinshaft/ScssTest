@@ -46,3 +46,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# User add...
+gem 'bootstrap-sass'
+gem 'haml-rails'
