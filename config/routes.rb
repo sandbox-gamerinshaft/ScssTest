@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  get "form/index"
+
+  get "apps/index"
+
+  get "development/index"
+
+  get "sample/index"
+
+  get "charcters/index"
+
+  get "homes/index"
   resources :pages
 
   # The priority is based upon order of creation: first created -> highest priority.
