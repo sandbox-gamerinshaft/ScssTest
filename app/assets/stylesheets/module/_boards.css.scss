@@ -1,0 +1,15 @@
+$side-margin: 40px;
+
+.boards{
+  .boards__link{
+    margin: 0px 10px;
+  }
+  .boards__link1{
+    @extend .boards__link;
+    margin-left: $side-margin;
+  }
+  .boards__link5{
+    @extend .boards__link;
+    margin-right: $side-margin;
+  }
+}

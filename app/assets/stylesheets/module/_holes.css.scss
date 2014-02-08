@@ -1,15 +1,17 @@
 .holes{
   width: 100%;
   .holes__hole{
-    align: center;
+    text-align: center;
   }
   .holes__hole1{
     @extend .holes__hole;
+    margin: 40px 0px
   }
   .holes__hole2{
     @extend .holes__hole;
   }
   .holes__hole3{
     @extend .holes__hole;
+    margin: 40px 0px
   }
 }
