@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get "sample/index"
 
-  get "charcters/index"
+  get "characters/index"
 
   get "homes/index"
   resources :pages
