@@ -1,17 +1,24 @@
+$holes__hole--side-margin: 230px;
+$holes__hole--top-margin: 70px;
+$holes__hole--center-margin: ((502px - ($holes__hole--side-margin * 2)) / 2);
+
 .holes{
-  width: 100%;
+  margin-top: 10px;
+  width: 960px;
   .holes__hole{
-    text-align: center;
   }
   .holes__hole1{
     @extend .holes__hole;
-    margin: 40px 0px
+    margin-top: $holes__hole--top-margin;
+    margin-left: $holes__hole--side-margin;
   }
   .holes__hole2{
     @extend .holes__hole;
+    margin: 0px $holes__hole--center-margin;
   }
   .holes__hole3{
     @extend .holes__hole;
-    margin: 40px 0px
+    margin-top: $holes__hole--top-margin;
+    margin-right: $holes__hole--side-margin;
   }
 }

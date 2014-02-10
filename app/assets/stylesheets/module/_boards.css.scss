@@ -1,15 +1,17 @@
-$side-margin: 40px;
+$boards__link--side-margin: 8px;
+$boards__link--center-margin: ((50px - $boards__link--side-margin) / 6);
 
 .boards{
+  margin-top: 55px;
   .boards__link{
-    margin: 0px 10px;
+    margin: 0px $boards__link--center-margin;
   }
   .boards__link1{
     @extend .boards__link;
-    margin-left: $side-margin;
+    margin-left: $boards__link--side-margin;
   }
   .boards__link5{
     @extend .boards__link;
-    margin-right: $side-margin;
+    margin-right: $boards__link--side-margin;
   }
 }

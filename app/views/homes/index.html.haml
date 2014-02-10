@@ -1,35 +1,30 @@
 .top_back_image
-  .row
-    .col-md-1
-    .col-md-10
+  .content.original-container
+    .row
       .header.pull-left
-        .row
-          .col-md-7
-            = image_tag "img/title.png", class: "header__title"
-          .col-md-2
+        .col-md-7
+          = image_tag "img/title.png", class: "header__title"
+        .col-md-5
+          .pull-left
             = image_tag "img/facebook.png", class: "header__facebook"
-          .col-md-2
+          .pull-right
             = image_tag "img/twitter.png", class: "header__twitter"
-  .box
-  .row
-    .col-md-3
-    .col-md-6
-      .holes.pull-left
-        .row
-          .col-md-4
+    .row
+      .box
+      .col-md-12
+        .holes
+          .pull-left
             = image_tag "img/hole.png", class: "holes__hole1"
-          .col-md-4
             = image_tag "img/hole.png", class: "holes__hole2"
-          .col-md-4
+          .pull-right
             = image_tag "img/hole.png", class: "holes__hole3"
-  .row
-    .col-md-1
-    .boards.col-md-10
-      = image_tag "img/top-link1.png", class: "boards__link1"
-      = image_tag "img/top-link1.png", class: "boards__link"
-      = image_tag "img/top-link1.png", class: "boards__link"
-      = image_tag "img/top-link1.png", class: "boards__link"
-      = image_tag "img/top-link1.png", class: "boards__link5"
+    .row
+      .boards
+        = image_tag "img/top-link1.png", class: "boards__link1"
+        = image_tag "img/top-link1.png", class: "boards__link"
+        = image_tag "img/top-link1.png", class: "boards__link"
+        = image_tag "img/top-link1.png", class: "boards__link"
+        = image_tag "img/top-link1.png", class: "boards__link5"
 
 
 .bottom_back_image
