@@ -1,5 +1,5 @@
-@mixin umekomisen($thin:1px){
-  border-top: $thin solid rgba(0, 0, 0, 0.2);
-  border-bottom: $thin solid rgba(255,255,255, 0.3);
+@mixin umekomisen($thin:1px,$black:0.2,$white:0.3){
+  border-top: $thin solid rgba(0,0,0,$black);
+  border-bottom: $thin solid rgba(255,255,255,$white);
   margin: 5px 0px;
 }

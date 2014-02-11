@@ -7,6 +7,6 @@
     margin: 0px 15px;
   }
   .umekomisen{
-    @include umekomisen(3px);
+    @include umekomisen(1px,0.3,1);
   }
 }
