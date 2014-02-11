@@ -20,11 +20,11 @@
             = image_tag "img/hole.png", class: "holes__hole3"
     .row
       .boards
-        = image_tag "img/top-link1.png", class: "boards__link1"
-        = image_tag "img/top-link1.png", class: "boards__link"
-        = image_tag "img/top-link1.png", class: "boards__link"
-        = image_tag "img/top-link1.png", class: "boards__link"
-        = image_tag "img/top-link1.png", class: "boards__link5"
+        = link_to image_tag('img/top-link1.png'), characters_index_path, class: "boards__link1"
+        = link_to image_tag('img/top-link2.png'), sample_index_path, class: "boards__link"
+        = link_to image_tag('img/top-link3.png'), development_index_path, class: "boards__link"
+        = link_to image_tag('img/top-link4.png'), apps_index_path, class: "boards__link"
+        = link_to image_tag('img/top-link5.png'), form_index_path, class: "boards__link5"
 
 
 .bottom-back-image

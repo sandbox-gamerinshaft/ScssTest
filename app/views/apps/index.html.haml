@@ -1,31 +1,22 @@
-.top-back-image--repeat
+.top-back-image--fixed
   .content.container
     .row
       .sub-header
-        = image_tag "img/sub-title.png", class: "sub-header__title"
-        = image_tag "img/head-link1.png", class: "sub-header__title"
-        = image_tag "img/head-link2.png", class: "sub-header__title"
-        = image_tag "img/head-link3.png", class: "sub-header__title"
-        = image_tag "img/head-alink4.png", class: "sub-header__title"
-        = image_tag "img/head-link5.png", class: "sub-header__title"
+        = link_to image_tag('img/sub-title.png'), homes_index_path, class: "sub-header__title"
+        = link_to image_tag('img/head-link1.png'), characters_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link2.png'), sample_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-alink4.png'), apps_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__img"
       .content-body--app
         .pull-left
-          = image_tag "img/gamekaihatu.png"
+          = image_tag "img/appkoukai.png"
         .col-md-12
           .row
             .col-md-4
-              = image_tag "img/side-kaihatu.png"
+              = image_tag "img/appside.png"
             .col-md-8
               .row
                 .col-md-12
-                  = image_tag "img/kaihatutekisuto.png"
-              .row
-                .col-md-12
-                  .content-body--apps__border
-                .col-md-12
-                  .col-md-6
-                  .col-md-6
-              .row
-                .col-md-12
-                  = image_tag "img/kaihatukankyo.png"
+
 

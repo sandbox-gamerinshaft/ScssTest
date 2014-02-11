@@ -1,13 +1,13 @@
-.top-back-image--repeat
+.top-back-image--fixed
   .content.container
     .row
       .sub-header.pull-left
-        = image_tag "img/sub-title.png", class: "sub-header__title"
-        = image_tag "img/head-alink1.png", class: "sub-header__title"
-        = image_tag "img/head-link2.png", class: "sub-header__title"
-        = image_tag "img/head-link3.png", class: "sub-header__title"
-        = image_tag "img/head-link4.png", class: "sub-header__title"
-        = image_tag "img/head-link5.png", class: "sub-header__title"
+        = link_to image_tag('img/sub-title.png'), homes_index_path, class: "sub-header__title"
+        = link_to image_tag('img/head-alink1.png'), characters_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link2.png'), sample_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link4.png'), apps_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__img"
       .content-body--character
         .pull-left
           = image_tag "img/character.png", class: "content-body--character__title"

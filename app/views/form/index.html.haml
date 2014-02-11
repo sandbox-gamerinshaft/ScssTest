@@ -1,2 +1,19 @@
-%h1 Form#index
-%p Find me in app/views/form/index.html.haml
+.top-back-image--fixed
+  .content.container
+    .row
+      .sub-header
+        = link_to image_tag('img/sub-title.png'), homes_index_path, class: "sub-header__title"
+        = link_to image_tag('img/head-link1.png'), characters_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link2.png'), sample_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-link4.png'), apps_index_path, class: "sub-header__img"
+        = link_to image_tag('img/head-alink5.png'), form_index_path, class: "sub-header__img"
+      .content-body--form
+        .pull-left
+          = image_tag "img/otoiawase.png"
+        .row
+          .col-md-2
+          .col-md-8
+            .pull-left
+              = image_tag ""
+          .col-md-2

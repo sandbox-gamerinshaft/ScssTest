@@ -4,4 +4,5 @@ $sub-header-length: 928px;
 .sub-header{
   margin: $sub-header-margin ((960px - $sub-header-length) /2);
   height: $sub-header-height;
+  width: $sub-header-length;
 }
