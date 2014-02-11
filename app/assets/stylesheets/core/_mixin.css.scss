@@ -1,5 +1,16 @@
-@mixin umekomisen($thin:1px,$black:0.2,$white:0.3){
-  border-top: $thin solid rgba(0,0,0,$black);
-  border-bottom: $thin solid rgba(255,255,255,$white);
-  margin: 5px 0px;
+@mixin umekomi-top($thin:2px,$op1:0.2,$op2:0.3){
+  border-top: $thin solid rgba(0,0,0,$op1);
+  @include box-shadow( 0px $thin rgba(255,255,255,$op2));
+  }
+@mixin umekomi-left($thin:2px,$op1:0.2,$op2:0.3){
+  border-left: $thin solid rgba(0,0,0,$op1);
+  @include box-shadow( -$thin  0px rgba(255,255,255,$op2));
+}
+@mixin umekomi-right($thin:2px,$op1:0.2,$op2:0.3){
+  border-right: $thin solid rgba(0,0,0,$op1);
+  @include box-shadow( -$thin  0px rgba(255,255,255,$op2));
+}
+@mixin umekomi-bottom($thin:2px,$op1:0.2,$op2:0.3){
+  border-bottom: $thin solid rgba(0,0,0,$op1);
+  @include box-shadow( 0px $thin rgba(255,255,255,$op2));
 }

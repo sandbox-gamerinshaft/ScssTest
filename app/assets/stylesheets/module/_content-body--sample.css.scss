@@ -28,16 +28,25 @@ $content-body--sample__dl--side-margin: 30px;
     right: 60px;
   }
   .game-list{
-    border: solid 1px #ccc;
-    width: 960px;
-    height: auto;
-    position: absolute;
-    top: 280px;
+    float: left;
     .game{
-      float: left;
+      width: 320px;
+      a{
+        .game__play-btn{
+          position: relative;
+          top: 50px;
+          left: 178px;
+        }
+        img{
 
-      width: 310px;
-      border: solid 1px #ccc;
+        }
+        .title{
+
+        }
+      }
+      div{
+
+      }
     }
   }
 }

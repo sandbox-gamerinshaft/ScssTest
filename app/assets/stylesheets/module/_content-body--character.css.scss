@@ -3,7 +3,7 @@ $content-body--character-side-margin: 25px;
 .content-body--character{
   @extend .content-body;
   .content-body--character__title{
-    margin: 18px 30px;
+    margin: 30px 30px;
   }
   .content-body--character__board{
     margin: 15px ((112px - ($content-body--character-side-margin * 2)) / 4);
@@ -16,5 +16,10 @@ $content-body--character-side-margin: 25px;
   .content-body--character__board--left{
     @extend .content-body--character__board;
     margin-left: $content-body--character-side-margin;
+  }
+  .umekomisen{
+    clear: both;
+    @include umekomi-top(2px,0.3,1);
+    margin: 0px 35px;
   }
 }

@@ -1,3 +1,11 @@
 .content-body--app{
   @extend .content-body;
+
+  .content-body--app__title{
+    margin: 30px 30px;
+  }
+  .content-body--app__tab{
+    margin: 0px 15px;
+  }
+
 }

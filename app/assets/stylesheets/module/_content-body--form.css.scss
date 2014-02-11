@@ -1,4 +1,7 @@
 .content-body--form{
   @extend .content-body;
   max-height: 550px;
+  .content-body--form__title{
+    margin: 30px 30px;
+  }
 }
