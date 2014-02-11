@@ -1,6 +1,6 @@
-.top-back-image--character{
+.top-back-image--repeat{
   @extend .top-back-image;
   background-image: url(/assets/img/back-none.png);
   background-repeat: repeat-y;
-  height: 746px * 2;
+  min-height: 746px * 2;
 }
