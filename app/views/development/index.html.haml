@@ -10,22 +10,29 @@
         = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__img"
       .content-body--development
         .pull-left
-          = image_tag "img/gamekaihatu.png"
+          = image_tag "img/gamekaihatu.png", class: "content-body--development__title"
         .col-md-12
           .row
             .col-md-4
-              = image_tag "img/side-kaihatu.png"
+              = image_tag "img/side-kaihatu.png", class: "content-body--development__tab"
             .col-md-8
               .row
                 .col-md-12
                   = image_tag "img/kaihatutekisuto.png"
               .row
                 .col-md-12
-                  .content-body--apps__border
+                  .umekomisen
                 .col-md-12
                   .col-md-6
+                    - 3.times do
+                      .box
                   .col-md-6
+                    - 3.times do
+                      .box
               .row
                 .col-md-12
                   = image_tag "img/kaihatukankyo.png"
+              .row
+                .col-md-12
+                  .umekomisen
 
