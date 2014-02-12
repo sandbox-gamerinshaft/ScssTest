@@ -113,7 +113,7 @@ __もとから使える便利な関数__
     @each $animal in $animals{
       .#{animal}-icon { background: url("#{$animal}.png")}
     }
-    関数
+### 関数
     $totalWidth: 940px;
     $columnCount: 5;
     @function getColumnWidth($width, $count){
