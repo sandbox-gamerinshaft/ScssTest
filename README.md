@@ -42,97 +42,102 @@ __--watch__オプションをつけると、
 
 ### コメントアウトについて
 `/* */`は複数業で書くときによく用いられる。これで書いたコメントはコンパイル後も残る。
-  `/  /`は一行で書くときに使われる。これで書いたコメントはコンパイル後は残らない。
-&が親要素の代わりに成る
-#main{
-  a{
-    &:hover{
-      text-decoration: none;
+
+`/  /`は一行で書くときに使われる。これで書いたコメントはコンパイル後は残らない。
+
+## Scssの機能
+### &が親要素の代わりに成る
+  #main{
+    a{
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
-}
-変数で扱えるデータ型
-数値
-$hoge: 50px;
-.foo{
-  width: $hoge;
-}
-  計算も出来る
+
+### 変数で扱えるデータ型
+#### 数値
+  $hoge: 50px;
+  .foo{
+    width: $hoge;
+  }
+計算も出来る
   .foo{
     width: ($hoge -2) / 2;
   }
-色
-$warning: red;
-.hoge{
-  color: $warning;
-}
-文字
-$imgDir: "../img/";
-.hoge{
-  background-image: url($imgDir + "foo.png");
-}
-もしくは
-.hoge{
-  background-image: url("#{$imgDir}foo.png");
-  /*こういうのも出来る*/
-  width: #{12 + 12}px;
-}
-もとから使える便利な関数
-http://sass-lang.com/documentation/Sass/Script/Functions.html
-真偽
-@if,@else文をつかって条件分岐
-$debugMode: true;
-$x: 10px;
-.hoge{
-  @if $debugMode == true{
-    color:red;
-  } @else if $debugMode == 1{
-    color:green;
-  } @else {
-    color:yellow;
+#### 色
+  $warning: red;
+  .hoge{
+    color: $warning;
   }
-  @if $x > 20 { background-color:blue;}
-}
-@for $i from 10 through 14 {
-  .fs#{$i} { font-size: #{$i}px; }
-}
-$i: 10;
-@while $i <= 14{
-  .fs#{$i} { font-size: #{$i}px; }
-  $i: $i + 1;
-}
-リスト
-$animals: cat, dog, tiger;
-@each $animal in $animals{
-  .#{animal}-icon { background: url("#{$animal}.png")}
-}
-関数
-$totalWidth: 940px;
-$columnCount: 5;
-@function getColumnWidth($width, $count){
-$padding: 10px;
-$columnWidth: floor(($width - ($padding * ($count -1))) / $count);
-  /*数値だけ確認*/
-  @debug: $columnWidth;
-  @return $columnWidth;
-}
-.grid{
-  float:left;
-  width: getColumnWidth($totalWidth, $columnCount);
-}
-mixin
-@mixin round($px:4px){
-  border-radius: $px;
-}
-.label{
-  font-size: 12px;
-  @include round(8px);
-}
-extend
-.box{
-  width: 50px;
-}
-.box1{
-  @extend .box
-  height: 10px
-}
+#### 文字
+  $imgDir: "../img/";
+  .hoge{
+    background-image: url($imgDir + "foo.png");
+  }
+もしくは
+  .hoge{
+    background-image: url("#{$imgDir}foo.png");
+    /*こういうのも出来る*/
+    width: #{12 + 12}px;
+  }
+__もとから使える便利な関数__
+<http://sass-lang.com/documentation/Sass/Script/Functions.html>
+#### 真偽
+  @if,@else文をつかって条件分岐
+
+  $debugMode: true;
+  $x: 10px;
+  .hoge{
+    @if $debugMode == true{
+      color:red;
+    } @else if $debugMode == 1{
+      color:green;
+    } @else {
+      color:yellow;
+    }
+    @if $x > 20 { background-color:blue;}
+  }
+  @for $i from 10 through 14 {
+    .fs#{$i} { font-size: #{$i}px; }
+  }
+  $i: 10;
+  @while $i <= 14{
+    .fs#{$i} { font-size: #{$i}px; }
+    $i: $i + 1;
+  }
+#### リスト
+  $animals: cat, dog, tiger;
+  @each $animal in $animals{
+    .#{animal}-icon { background: url("#{$animal}.png")}
+  }
+  関数
+  $totalWidth: 940px;
+  $columnCount: 5;
+  @function getColumnWidth($width, $count){
+  $padding: 10px;
+  $columnWidth: floor(($width - ($padding * ($count -1))) / $count);
+    /*数値だけ確認*/
+    @debug: $columnWidth;
+    @return $columnWidth;
+  }
+  .grid{
+    float:left;
+    width: getColumnWidth($totalWidth, $columnCount);
+  }
+### mixin
+  @mixin round($px:4px){
+    border-radius: $px;
+  }
+  .label{
+    font-size: 12px;
+    @include round(8px);
+  }
+### extend
+  .box{
+    width: 50px;
+  }
+  .box1{
+    @extend .box
+    height: 10px
+  }
