@@ -1,8 +1,24 @@
-$sub-header-margin: 30px;
-$sub-header-height: 62px;
-$sub-header-length: 928px;
 .sub-header{
-  margin: $sub-header-margin ((960px - $sub-header-length) /2);
-  height: $sub-header-height;
-  width: $sub-header-length;
+  width: 960px;
+  height: 67px;
+  margin: 20px 0px;
+  .sub-header__title{
+    desplay: block;
+    float: left;
+    margin: 11px 0px;
+  }
+  .sub-header__clouds{
+    width: 720px;
+    .sub-header__cloud{
+      text-align: center;
+      width: 144px;
+      display: block;
+      float: left;
+    }
+    .sub-header__cloud--active{
+      @extend .sub-header__cloud;
+      margin-top: 4px;
+    }
+  }
+
 }

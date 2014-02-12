@@ -1,13 +1,14 @@
 .top-back-image--fixed
   .content.container
     .row
-      .sub-header
+      .sub-header.pull-left
         = link_to image_tag('img/sub-title.png'), homes_index_path, class: "sub-header__title"
-        = link_to image_tag('img/head-link1.png'), characters_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-link2.png'), sample_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "sub-header__img"
-        = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__img"
+        .sub-header__clouds.pull-right
+          = link_to image_tag('img/head-alink1.png'), characters_index_path, class: "sub-header__cloud--active"
+          = link_to image_tag('img/head-link2.png'), sample_index_path, class: "sub-header__cloud"
+          = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__cloud"
+          = link_to image_tag('img/head-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "sub-header__cloud"
+          = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__cloud"
       .content-body--app
         .pull-left
           = image_tag "img/appkoukai.png", class: "content-body--app__title"
