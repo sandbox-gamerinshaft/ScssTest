@@ -2,7 +2,9 @@ $boards__link--side-margin: 8px;
 $boards__link--center-margin: ((50px - $boards__link--side-margin) / 6);
 
 .boards{
-  margin-top: 55px;
+  position: absolute;
+  bottom: 0;
+  bottom: 12%;
   .boards__link{
     margin: 0px $boards__link--center-margin;
   }

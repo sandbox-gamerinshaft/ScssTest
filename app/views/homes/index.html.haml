@@ -7,8 +7,7 @@
     .holes
       = image_tag "img/hole.png", class:"holes__hole1"
       = image_tag "img/hole.png", class:"holes__hole2"
-      %a{href:""}
-        = image_tag "img/top-mol.png", class:"holes__hole3"
+      %img#gazo{src:"/assets/img/top-mol.png", onclick: "changeIMG()", class: "holes__hole3"}
     .boards
       = link_to image_tag('img/top-link1.png'), characters_index_path, class: "boards__link1"
       = link_to image_tag('img/top-link2.png'), sample_index_path, class: "boards__link"
@@ -16,3 +15,25 @@
       = link_to image_tag('img/top-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "boards__link"
       = link_to image_tag('img/top-link5.png'), form_index_path, class: "boards__link5"
 .bottom-back-image
+
+:javascript
+  //画像を配列に格納する
+  var img = new Array();
+
+  img[0] = new Image();
+  img[0].src = "/assets/img/top-mol.png";
+  img[1] = new Image();
+  img[1].src = "/assets/img/top-mol.gif";
+  var cnt=0;
+  //画像切り替え関数
+  function changeIMG(){
+
+    //画像番号を進める
+    if (cnt == 1)
+    { cnt=0; }
+    else
+    { cnt++; }
+
+    //画像を切り替える
+    document.getElementById("gazo").src=img[cnt].src;
+  }

@@ -4,11 +4,23 @@ $holes__hole--center-margin: ((502px - ($holes__hole--side-margin * 2)) / 2);
 
 .holes{
   .holes__hole{
+    position: absolute;
   }
   .holes__hole1{
+    @extend .holes__hole;
+    left: 0;
+    margin-left: 160px;
+    margin-top: 180px;
   }
   .holes__hole2{
+    @extend .holes__hole;
+    margin-top: 130px;
+    margin-left: 395px;
   }
   .holes__hole3{
+    @extend .holes__hole;
+    right: 0;
+    margin-right: 145px;
+    margin-top: 25px;
   }
 }

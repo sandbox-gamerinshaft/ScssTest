@@ -1,21 +1,21 @@
 .header{
   width: 100%;
   .header__title{
-    width: 550px;
-    height: auto;
     margin: 50px 0px;
+    margin-left: -60px
   }
   .header__cloud{
-    width: 185px;
-    hegiht: auto;
+    position: absolute;
   }
   .header__facebook{
     @extend .header__cloud;
-    margin: 60px 0px;
+    margin-top: 50px;
+    margin-left: 20px;
   }
   .header__twitter{
     @extend .header__cloud;
-    margin: 120px 0px;
+    right: 0;
+    margin-top: 80px;
   }
 
 }
