@@ -14,10 +14,10 @@ Scssが作られた。こちらはよりCSSっぽいシンタックスになっ�
 
 `sass hoge.scss:foo/hoge.css`
 このようにコマンドインタプリタに入力すると,
-  `./hoge.scss` が `./foo/hoge.css'
+  `./hoge.scss` が `./foo/hoge.css`
 にコンパイルされる。また、
 
-'less hoge.css'
+`less hoge.css`
 
 で中身を確認出来る。
 
@@ -25,7 +25,7 @@ Scssが作られた。こちらはよりCSSっぽいシンタックスになっ�
 
 `sass --style expanded hoge.scss:hoge.css`
 
-という風にして_--style_オプションを指定してあげると、
+という風にして__--style__オプションを指定してあげると、
 コンパイルされたコードが人間に読みやすい形と成って出力される。
 
 #### 自動的にファイルをコンパイルする
@@ -38,7 +38,7 @@ __--watch__オプションをつけると、
 で指定されたファイルがsaveされる度に自動でコンパイルしてくれる。
 
 ディレクトリ以下を自動でapplication.cssにコンパイルする方法はこれ↓
-[scimpr]: http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/　"guardを使ってディレクトリを自動コンパイル"
+[google]: http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/　"guardを使ってディレクトリを自動コンパイル"
 
 ### コメントアウトについて
 /**/で書いたコメントはコンパイル後も残る。
