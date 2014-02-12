@@ -62,6 +62,7 @@ __--watch__オプションをつけると、
       width: $hoge;
     }
 計算も出来る
+
     .foo{
       width: ($hoge -2) / 2;
     }
@@ -76,13 +77,16 @@ __--watch__オプションをつけると、
       background-image: url($imgDir + "foo.png");
     }
 もしくは
+
     .hoge{
       background-image: url("#{$imgDir}foo.png");
       /*こういうのも出来る*/
       width: #{12 + 12}px;
    }
+
 __もとから使える便利な関数__
 <http://sass-lang.com/documentation/Sass/Script/Functions.html>
+
 #### 真偽(@if,@else文をつかって条件分岐)
     $debugMode: true;
     $x: 10px;
