@@ -6,25 +6,41 @@ _Sassについて調べたことや、忘れたくないことをまとめまし
 
 ### Sassの歴史
 
-Sass(サース)と読む。
-.sass(Ruby/Hamlっぽい)
-不評 ->
-.scss(よりCSSっぽいデザインに)
-おしまい
-###ファイルを scss -> css にコンパイルする方法###
-('sass hoge.scss:foo/hoge.css')
-このように入力すると,
-./hoge.scss が ./foo/hoge.css
-にコンパイルされる。
-**less hoge.css**
-で中身確認。
-**sass --style expanded hoge.scss:hoge.css**
-という風に--styleを指定してあげると、
-人間が見やすいコードを書き出してくれる。
-また--watchをつけると、
-saveされる度に自動でコンパイルしてくれる。
+__Sass__(サース)と読む。
+  CSSを効率よく書く為に、はじめSassが作られたが、不評だった為に
+Scssが作られた。こちらはよりCSSっぽいシンタックスになっている。
+
+### ファイルを scss -> css にコンパイルする方法###
+
+'sass hoge.scss:foo/hoge.css'
+このようにコマンドインタプリタに入力すると,
+  './hoge.scss' が './foo/hoge.css'
+にコンパイルされる。また、
+
+'less hoge.css'
+
+で中身を確認出来る。
+
+#### 見やすい形で出力する
+
+'sass --style expanded hoge.scss:hoge.css'
+
+という風にして_--style_オプションを指定してあげると、
+コンパイルされたコードが人間に読みやすい形と成って出力される。
+
+#### 自動的にファイルをコンパイルする
+
+__--watch__オプションをつけると、
+ターミナルにプログラムが走り、
+
+'sass --style expanded --watch hoge.scss:hoge.css'
+
+で指定されたファイルがsaveされる度に自動でコンパイルしてくれる。
+
 ディレクトリ以下を自動でapplication.cssにコンパイルする方法はこれ↓
-http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/
+[scimpr]:http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/
+
+### コメントアウトについて
 /**/で書いたコメントはコンパイル後も残る。
 //で書いたコメントはコンパイル後は残らない。
 &が親要素の代わりに成る
