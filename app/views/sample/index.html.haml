@@ -1,13 +1,14 @@
 .top-back-image--fixed
   .content.container
     .row
-      .sub-header.pull-left
+      .sub-header.pull-left.pull-left
         = link_to image_tag('img/sub-title.png'), homes_index_path, class: "sub-header__title"
-        = link_to image_tag('img/head-link1.png'), characters_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-alink2.png'), sample_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__img"
-        = link_to image_tag('img/head-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "sub-header__img"
-        = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__img"
+        .sub-header__clouds.pull-right
+          = link_to image_tag('img/head-link1.png'), characters_index_path, class: "sub-header__cloud"
+          = link_to image_tag('img/head-alink2.png'), sample_index_path, class: "sub-header__cloud--active"
+          = link_to image_tag('img/head-link3.png'), development_index_path, class: "sub-header__cloud"
+          = link_to image_tag('img/head-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "sub-header__cloud"
+          = link_to image_tag('img/head-link5.png'), form_index_path, class: "sub-header__cloud"
       .content-body--sample
         .pull-left
           = image_tag "img/samplegame.png",class: "content-body--sample__title"
@@ -78,3 +79,4 @@
               %img{src: "air_hockey/screenshot.png"}/
               .title No.9 エアホッケー
             %div ホッケー対決です。友達と対戦しましょう。
+= render "layouts/footer"

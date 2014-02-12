@@ -1,0 +1,23 @@
+.footer--homes{
+  position: relative;
+  bottom: 0px;
+  .declar{
+    color: rgba(255,255,255,0.5);
+    top: 650px;
+    left: 300px;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: rgba(255,255,255,0.5);
+    }
+    a:hover{
+      color: white;
+    }
+  }
+  .company{
+    color: rgba(255,255,255,0.5);
+    top: 650px;
+    right: 300px;
+    position: relative;
+  }
+}

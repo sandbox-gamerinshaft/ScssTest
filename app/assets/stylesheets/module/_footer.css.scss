@@ -1,0 +1,30 @@
+.footer{
+  bottom: 0px;
+  min-height: 80px;
+  width: auto;
+  /* Firefox */
+  background: -moz-linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  /* Chrom と Safari */
+  background: -webkit-gradient(linear, center top, center bottom, from(#8e5424), to(#4f2a0d));
+  /* 共通 */
+  background: linear-gradient(top center, #8e5424 0%, #4f2a0d 100%);
+  .declar{
+    color: rgba(255,255,255,0.5);
+    top: 30px;
+    left: 300px;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: rgba(255,255,255,0.5);
+    }
+    a:hover{
+      color: white;
+    }
+  }
+  .company{
+    color: rgba(255,255,255,0.5);
+    top: 30px;
+    right: 300px;
+    position: relative;
+  }
+}
