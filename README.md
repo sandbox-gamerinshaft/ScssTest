@@ -84,8 +84,7 @@ __--watch__オプションをつけると、
       width: #{12 + 12}px;
    }
 
-__もとから使える便利な関数__
-<http://sass-lang.com/documentation/Sass/Script/Functions.html>
+
 
 #### 真偽(@if,@else文をつかって条件分岐)
     $debugMode: true;
@@ -127,6 +126,10 @@ __もとから使える便利な関数__
       float:left;
       width: getColumnWidth($totalWidth, $columnCount);
     }
+
+__もとから使える便利な関数__
+<http://sass-lang.com/documentation/Sass/Script/Functions.html>
+
 ### mixin
     @mixin round($px:4px){
       border-radius: $px;
