@@ -28,24 +28,35 @@ $content-body--sample__dl--side-margin: 30px;
     right: 60px;
   }
   .game-list{
-    float: left;
+      width: 960px;
+      margin-right: auto;
+      margin-left: auto;
     .game{
-      width: 320px;
+      float:left;
+      position: relative;
+      width: 245px;
+      min-height: 300px;
+      margin: 15px 37.5px;
+      a:hover{
+       color: #16aef0;
+      }
       a{
+        text-decoration: none;
+        color: #555;
         .game__play-btn{
-          position: relative;
-          top: 50px;
-          left: 178px;
+          position: absolute;
+          width: 95px;
+          margin-top: 20px;
+          left: 31%;
+          opacity: 0.95;
         }
         img{
-
+          width: 245px;
         }
         .title{
-
+          margin: 2px 0px 4px 0px;
+          font-weight: 600;
         }
-      }
-      div{
-
       }
     }
   }
