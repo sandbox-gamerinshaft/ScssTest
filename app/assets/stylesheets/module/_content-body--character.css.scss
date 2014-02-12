@@ -19,7 +19,7 @@ $content-body--character-side-margin: 25px;
   }
   .umekomisen{
     clear: both;
-    @include umekomi-top(2px,0.3,1);
+    @include umekomi-top(1px,0.3,1);
     margin: 0px 35px;
   }
 }
