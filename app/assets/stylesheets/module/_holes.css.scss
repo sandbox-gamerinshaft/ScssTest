@@ -3,22 +3,12 @@ $holes__hole--top-margin: 70px;
 $holes__hole--center-margin: ((502px - ($holes__hole--side-margin * 2)) / 2);
 
 .holes{
-  margin-top: 10px;
-  width: 960px;
   .holes__hole{
   }
   .holes__hole1{
-    @extend .holes__hole;
-    margin-top: $holes__hole--top-margin;
-    margin-left: $holes__hole--side-margin;
   }
   .holes__hole2{
-    @extend .holes__hole;
-    margin: 0px $holes__hole--center-margin;
   }
   .holes__hole3{
-    @extend .holes__hole;
-    margin-top: $holes__hole--top-margin;
-    margin-right: $holes__hole--side-margin;
   }
 }

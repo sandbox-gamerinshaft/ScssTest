@@ -1,8 +1,17 @@
 .top-back-image{
   background-image: url(/assets/img/back.png);
-  background-size: 1517px 746px;
-  width: auto;
+  background-size: cover;
+  min-width: 960px;
   min-height: 746px;
   background-position: center top;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.top-content{
+  width: 960px;
+  height: 746px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }

@@ -1,30 +1,18 @@
 .top-back-image
-  .content.container
-    .row
-      .header.pull-left
-        .col-md-7
-          = image_tag "img/title.png", class: "header__title"
-        .col-md-5
-          .pull-left
-            = image_tag "img/facebook.png", class: "header__facebook"
-          .pull-right
-            = image_tag "img/twitter.png", class: "header__twitter"
-    .row
-      .box
-      .col-md-12
-        .holes
-          .pull-left
-            = image_tag "img/hole.png", class: "holes__hole1"
-            = image_tag "img/hole.png", class: "holes__hole2"
-          .pull-right
-            = image_tag "img/hole.png", class: "holes__hole3"
-    .row
-      .boards
-        = link_to image_tag('img/top-link1.png'), characters_index_path, class: "boards__link1"
-        = link_to image_tag('img/top-link2.png'), sample_index_path, class: "boards__link"
-        = link_to image_tag('img/top-link3.png'), development_index_path, class: "boards__link"
-        = link_to image_tag('img/top-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "boards__link"
-        = link_to image_tag('img/top-link5.png'), form_index_path, class: "boards__link5"
-
-
+  .top-content
+    .header
+      = image_tag "img/title.png", class:"header__title"
+      = image_tag "img/facebook.png", class:"header__facebook"
+      = image_tag "img/twitter.png", class:"header__twitter"
+    .holes
+      = image_tag "img/hole.png", class:"holes__hole1"
+      = image_tag "img/hole.png", class:"holes__hole2"
+      %a{href:""}
+        = image_tag "img/top-mol.png", class:"holes__hole3"
+    .boards
+      = link_to image_tag('img/top-link1.png'), characters_index_path, class: "boards__link1"
+      = link_to image_tag('img/top-link2.png'), sample_index_path, class: "boards__link"
+      = link_to image_tag('img/top-link3.png'), development_index_path, class: "boards__link"
+      = link_to image_tag('img/top-link4.png'), "http://molgamefactory.tumblr.com/", target: "_blank", class: "boards__link"
+      = link_to image_tag('img/top-link5.png'), form_index_path, class: "boards__link5"
 .bottom-back-image
