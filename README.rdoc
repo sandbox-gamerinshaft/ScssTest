@@ -33,9 +33,12 @@ http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%8
 //で書いたコメントはコンパイル後は残らない。
 
 &が親要素の代わりに成る
-a{
-  &:hover{
-    text-decoration: none;
+
+#main{
+  a{
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
