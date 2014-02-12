@@ -82,7 +82,7 @@ __--watch__オプションをつけると、
       background-image: url("#{$imgDir}foo.png");
       /*こういうのも出来る*/
       width: #{12 + 12}px;
-   }
+    }
 
 
 
