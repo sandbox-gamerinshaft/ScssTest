@@ -1,24 +1,29 @@
+オレオレSass備忘録
+===================
+Sassについて調べたことや、忘れたくないことをまとめました。
+
+使う前の前提知識
+-------------------
+
+###Sassの歴史###
 Sass(サース)と読む。
-
 .sass(Ruby/Hamlっぽい)
-
 不評 ->
-
 .scss(よりCSSっぽいデザインに)
+おしまい
 
-ファイルを
-scss -> css
-にコンパイルする方法
+###ファイルを scss -> css にコンパイルする方法###
 
-sass hoge.scss:foo/hoge.css
+**sass hoge.scss:foo/hoge.css**
 
-このように入力すると
+このように入力すると,
 ./hoge.scss が ./foo/hoge.css
 にコンパイルされる。
 
-less hoge.cssで中身確認。
+**less hoge.css**
+で中身確認。
 
-sass --style expanded hoge.scss:hoge.css
+**sass --style expanded hoge.scss:hoge.css**
 
 という風に--styleを指定してあげると、
 人間が見やすいコードを書き出してくれる。
@@ -27,7 +32,8 @@ sass --style expanded hoge.scss:hoge.css
 saveされる度に自動でコンパイルしてくれる。
 
 ディレクトリ以下を自動でapplication.cssにコンパイルする方法はこれ↓
-http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/
+> http://blog.scimpr.com/2013/01/08/rubyguard%E3%81%A7sasscompasscoffeescript%E3%81%AE%E8%87%AA%E5%8B%95%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB%E7%92%B0%E5%A2%83/
+
 
 /**/で書いたコメントはコンパイル後も残る。
 //で書いたコメントはコンパイル後は残らない。
