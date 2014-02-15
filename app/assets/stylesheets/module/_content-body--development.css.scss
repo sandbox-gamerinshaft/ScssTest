@@ -5,6 +5,14 @@
   }
   .content-body--development__tab{
     margin: 0px 15px;
+    border: 4px solid #a5a5a5;
+    width: 215px;
+    .border-bottom{
+      border-bottom: 1px solid #a5a5a5;
+    }
+    img:hover{
+      opacity: 0.9;
+    }
   }
   .umekomisen{
     @include umekomi-top(1px,0.3,1);
