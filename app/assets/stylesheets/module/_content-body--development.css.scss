@@ -10,4 +10,28 @@
     @include umekomi-top(1px,0.3,1);
     margin: 5px;
   }
+  .kaihatutekisuto{
+    margin: 20px 0px;
+    .tekisuto-img{
+      display: inline-block;
+      vertical-align: top;
+      .tekisuto{
+        width: 220px;
+        height: 240px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      .download-btn{
+        margin-top: 20px
+      }
+    }
+    .tekisuto-tc{
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 50px;
+      img{
+        width: 300px;
+      }
+    }
+  }
 }
