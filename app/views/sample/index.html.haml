@@ -27,6 +27,8 @@
               .title No.1 100m走ハードル
             %div
               100メートルハードル走でタイムを競おう！
+            = image_tag "/assets/img/sourcecode-btn.png", class: "game__sourcecode-btn"
+            = link_to "hoge", "https://google.com", target: "_blank"
           .game
             %a{href: "100m_run/src/default.html"}
               = image_tag "img/btn.png", class: "game__play-btn"
@@ -35,7 +37,6 @@
             %div
               100メートル走で世界記録をめざそう！
           .game
-
             %a{href: "23_no_yoru/src/default.html"}
               = image_tag "img/btn.png", class: "game__play-btn"
               %img{src: "/assets/img/screenshot.png"}/
